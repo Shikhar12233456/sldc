@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mybox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    background-color: #EFF6FF;
+}
+
+.create-user-form-container,
+.reset-password-from-container,
+
+.update-user-password-form-container,
+.update-user-role-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+    width: 50vw;
+    margin-left: 50px;
+}
+.delete-user-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 50vw;
+    margin-left: 75px;
+}
