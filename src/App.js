@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Homeome";
-import Dayahead from "./components/Dayahead"
+import Home from "./components/Home";
+import DayAhead from "./components/Dayahead"
 
 function App() {
   return (
@@ -8,8 +8,8 @@ function App() {
     <div className={"w-full h-full"}>
      
        <Routes>
-        <Route path="/" element={<Home />} />      
-        <Route path="/Dayahead" element={<Dayahead />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/Dayahead" element={<DayAhead />} />
        </Routes>
       
     </div>

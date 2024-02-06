@@ -2,6 +2,7 @@ import React from "react";
 import LineGraph from "./chart";
 import Chart from "./chart";
 import {hrData, loadData} from "../constant/const";
+
 const Home = () => {
     return (
         <div className={"w-full h-full flex flex-row justify-between bg-blue-50"}>
