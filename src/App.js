@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Homeome";
+import Home from "./components/home";
 import Dayahead from "./components/Dayahead"
 
 function App() {
