@@ -2,7 +2,7 @@ import React from 'react';
 import { DayAheadData } from "../constant/const";
 import './Dayahead.css';
 
-const Dayahead = () => {
+const DayAhead = () => {
   return (
     <div className="container-table">
       <div className="relative overflow-x-auto shadow-md border">
@@ -62,4 +62,4 @@ const Dayahead = () => {
   );
 }
 
-export default Dayahead;
+export default DayAhead;
