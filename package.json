@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@canvasjs/charts": "^3.7.36",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.18",
+    "@mui/material": "^5.15.7",
     "@progress/kendo-react-charts": "^7.1.0",
     "@progress/kendo-theme-default": "^7.2.0",
     "@testing-library/jest-dom": "^5.17.0",
