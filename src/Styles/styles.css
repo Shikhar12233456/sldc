@@ -1,0 +1,791 @@
+:root {
+    --main-card-height: 64vh;
+    --main-content-24-card-height: 79.1vh;
+    --main-content-card__hourly-height: 32vh;
+    --main-body-height: 92.8vh;
+}
+
+
+/* General CSS */
+
+html {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nomargin {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    width: 13px;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #a5b0c9;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a5b0c9;
+}
+
+.radio_container input~.checkmark {
+    background-color: #ccc;
+}
+
+.page-content {
+    max-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: 7.2vh 92.8vh;
+    grid-template-columns: 1fr;
+}
+
+
+/* Top Navbar Starts  */
+
+.main-content-navbar {
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: 500;
+    background-color: #374b76;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-navbar .main-navbar-top_header {
+    font-weight: 500;
+    font-size: 20pt;
+    text-transform: capitalize;
+    color: whitesmoke;
+    order: -1;
+}
+
+.main-content-navbar .main-navbar-dropdown .navbar-nav {
+    float: right !important;
+    align-content: flex-end;
+    clear: left;
+    margin-left: auto;
+}
+
+.main-content-navbar h1 {
+    display: inline;
+    align-self: center;
+}
+
+.my-responsive-menu {
+    font-size: 12pt;
+    width: 55vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.my-responsive-menu a {
+    align-self: center;
+    color: white;
+}
+
+.my-responsive-menu a:hover {
+    color: white;
+}
+
+.main-content-navbar h1 {
+    vertical-align: middle;
+}
+
+
+/* Top Navbar Ends */
+
+.main-content-body {
+    background-color: rgba(155, 195, 255, 0.1);
+    display: grid;
+    min-height: auto;
+    grid-template-columns: 8.33vw 91.67vw;
+    grid-template-rows: 92.8vh;
+}
+
+
+/* Sidebar starts */
+
+.main-content-sidebar {
+    background: #6d7f9b;
+    border-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 13pt;
+    padding-top: 8px;
+}
+
+.main-content-sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+.main-content-sidebar ul li a {
+    color: whitesmoke;
+    /* padding: 20px 0; */
+    padding: 10px;
+    padding-left: 20px;
+    display: block;
+    font-size: 14pt;
+}
+
+.main-content-sidebar ul li a:active {
+    background-color: #24467d;
+}
+
+.main-content-sidebar ul li a.active {
+    background-color: #24467d;
+}
+
+.main-content-sidebar hr {
+    margin: 10pt 10pt;
+    border: 0.5px solid whitesmoke;
+}
+
+
+/* Sidebar ends */
+
+.main-content__home {
+    display: grid;
+    grid-template-columns: 52.5vw 39.17vw;
+    min-width: auto;
+    min-height: auto;
+    max-width: 91.67vw;
+    max-height: 92.8vh;
+}
+
+#main-content__area-indicator {
+    padding: 7pt 3pt;
+    /* margin-left: 10pt; */
+    color: #102850;
+    font-weight: 500;
+    text-transform: unset;
+}
+
+.main-content__report {
+    display: grid;
+    grid-template-rows: 10vh 77.5vh;
+    min-width: auto;
+    min-height: auto;
+    max-width: 69.2vw;
+    max-height: 92.8vh;
+    justify-content: center;
+    margin-left: 11.23vw;
+    margin-right: 11.23vw;
+}
+
+.main-content__report-form {
+    width: 69.2vw;
+}
+
+.main-content-chart {
+    padding-left: 2.8vw;
+}
+
+.main-content-card {
+    /* border-color: rgb(112, 112, 112) !important; */
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10pt !important;
+    border-width: 0.2pt;
+}
+
+.main-content-card .main-content-card__header {
+    padding-left: 20pt;
+    padding-top: 10pt;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-body {
+    padding: 0px 10px 10px 10px !important;
+}
+
+.main-content-card__chart {
+    width: 48.4vw;
+    height: 48.7vh;
+    margin-bottom: 2.13vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 12vh 36.7vh;
+}
+
+.main-content__chart-selector {
+    display: flex;
+    align-items: center;
+}
+
+.main-content__chart-selector label input {
+    height: 21px;
+    width: 21px;
+    margin-right: 10px;
+}
+
+.main-content__chart-selector label {
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.chart-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* .main-chart-area {
+  margin-bottom: 15px;
+} */
+
+.float-right {
+    margin-right: 2vw;
+    align-self: center;
+}
+
+
+.main-content-hourly {
+    overflow-y: hidden;
+    margin-left: 2.8vw;
+}
+
+.main-content-card__hourly {
+    max-height: var(--main-content-card__hourly-height);
+    /* overflow-y: scroll; */
+    width: 48.4vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 6vh 20vh;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    margin: 0px 7px 0px 0px !important;
+}
+
+.main-content-24 {
+    margin-left: 1.3vw;
+    margin-top: 7vh;
+}
+
+.main-content-24-card {
+    height: var(--main-content-24-card-height);
+    width: 35.1vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 11vh 60vh;
+}
+
+.main-home-content__hrtable {
+    font-size: 14px;
+    font-weight: 400;
+    /* overflow: scroll; */
+    height: calc(0.7 * var(--main-content-card__hourly-height));
+}
+
+.main-home-content__hrtable thead th {
+    padding-top: 0 !important;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-home-content__hrtable td {
+    text-align: center;
+}
+
+.main-content-24-table-header table {
+    table-layout: fixed;
+    width: 95%;
+}
+
+.main-content-24-table-header th {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.main-content-24-table {
+    overflow: auto;
+    height: calc(0.76 * var(--main-content-24-card-height));
+    border-radius: 13px !important;
+    margin: 13px 13px 20px 13px;
+}
+
+.main-content-24-table table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr:nth-child(even) {
+    background-color: #eff4fb;
+}
+
+.main-content-24-table td {
+    text-align: center;
+}
+
+.main-content-24-table td,
+th {
+    padding: 12px 0px;
+}
+
+#main-content-card__loadforecast {
+    margin-top: 20px;
+    padding: 10px;
+    height: 82vh;
+    width: 80vw;
+    overflow-y: scroll;
+}
+
+#main-content-card__missingdata {
+    margin-top: 20px;
+    padding: 10px;
+    height: 82vh;
+    width: 80vw;
+    overflow-y: scroll;
+}
+
+
+/* Start of Temporary css for report */
+
+#main-content-card__report {
+    padding: 10px;
+    height: 77.5vh;
+    width: 69vw;
+    overflow-y: scroll;
+}
+
+#main-content-card__report .card-body {
+    margin: 10px;
+    margin-bottom: 20px;
+    height: var(--main-card-height);
+    width: 63vw;
+    overflow-y: scroll;
+}
+
+.report__accuracy {
+    font-weight: 400;
+    font-size: 10pt;
+}
+
+.user-account {
+    display: grid;
+    min-width: 90vw;
+    min-height: auto;
+    margin-top: 40px;
+    margin-bottom: auto;
+}
+
+
+/* End of Temporary css for report */
+
+@media only screen and (max-width: 768px) {
+    .main-content-sidebar {
+        display: none;
+    }
+    .main-home-content__hrtable {
+        overflow: scroll;
+        height: calc(0.9 * var(--main-content-card__hourly-height));
+    }
+    .main-content-body {
+        overflow-x: hidden;
+        max-height: 200vh;
+        max-width: 100vw;
+    }
+    .main-content__home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 3fr;
+        min-width: auto;
+        min-height: auto;
+        max-width: 91.67vw;
+        max-height: 92.8vh;
+    }
+    .main-content__report {
+        display: grid;
+        grid-template-rows: 10vh 77.5vh;
+        min-width: auto;
+        min-height: auto;
+        max-width: 80vw;
+        max-height: 92.8vh;
+        justify-content: center;
+        margin: auto;
+    }
+    .main-content-card__chart {
+        border-width: 0.2pt;
+        width: 93vw;
+        height: 50vh;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-rows: 12vh 36.7vh;
+    }
+    .main-content-card__hourly {
+        max-height: calc(1.5 * var(--main-content-card__hourly-height));
+        width: 93vw;
+        box-sizing: border-box;
+        padding-top: 0.1vh;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-bottom: 0.1vh;
+        display: grid;
+        grid-template-rows: 6vh 20vh;
+    }
+    .main-content-24-card {
+        margin-top: -5.5vh;
+        margin-left: 1.7vw;
+        margin-bottom: 4vh;
+        height: 79vh;
+        width: 93vw;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 11vh 60vh;
+        padding: 20px;
+    }
+    .user-account {
+        display: grid;
+        min-width: 95vw;
+        min-height: auto;
+        margin-top: 40px;
+        margin-bottom: auto;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .main-content-sidebar {
+        display: none;
+    }
+    .main-home-content__hrtable {
+        overflow: scroll;
+        height: calc(0.9 * var(--main-content-card__hourly-height));
+    }
+    .main-content-body {
+        overflow-x: hidden;
+        max-height: 200vh;
+        max-width: 100vw;
+    }
+    .main-content__home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 3fr;
+        min-width: auto;
+        min-height: auto;
+        max-width: 91.67vw;
+        max-height: 92.8vh;
+    }
+    .main-content__report {
+        display: grid;
+        grid-template-rows: 10vh 77.5vh;
+        min-width: auto;
+        min-height: auto;
+        max-width: 80vw;
+        max-height: 92.8vh;
+        justify-content: center;
+        margin: auto;
+    }
+    .main-content-card__chart {
+        border-width: 0.2pt;
+        width: 93vw;
+        height: 50vh;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-rows: 12vh 36.7vh;
+    }
+    .main-content-card__hourly {
+        max-height: calc(1.5 * var(--main-content-card__hourly-height));
+        width: 93vw;
+        box-sizing: border-box;
+        padding-top: 0.1vh;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-bottom: 0.1vh;
+        display: grid;
+        grid-template-rows: 6vh 20vh;
+    }
+    .main-content-24-card {
+        margin-top: -5.5vh;
+        margin-left: 1.7vw;
+        margin-bottom: 4vh;
+        height: 79vh;
+        width: 93vw;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 11vh 60vh;
+        padding: 20px;
+    }
+    .user-account {
+        display: grid;
+        min-width: 95vw;
+        min-height: auto;
+        margin-top: 40px;
+        margin-bottom: auto;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .main-content-sidebar {
+        display: none;
+    }
+    .main-home-content__hrtable {
+        overflow: scroll;
+        height: calc(0.9 * var(--main-content-card__hourly-height));
+    }
+    .main-content-body {
+        overflow-x: hidden;
+        max-height: 200vh;
+        max-width: 100vw;
+    }
+    .main-content__home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 3fr;
+        min-width: auto;
+        min-height: auto;
+        max-width: 91.67vw;
+        max-height: 92.8vh;
+    }
+    .main-content__report {
+        display: grid;
+        grid-template-rows: 10vh 77.5vh;
+        min-width: auto;
+        min-height: auto;
+        max-width: 80vw;
+        max-height: 92.8vh;
+        justify-content: center;
+        margin: auto;
+    }
+    .main-content-card__chart {
+        border-width: 0.2pt;
+        width: 93vw;
+        height: 50vh;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-rows: 12vh 36.7vh;
+    }
+    .main-content-card__hourly {
+        max-height: calc(1.5 * var(--main-content-card__hourly-height));
+        width: 93vw;
+        box-sizing: border-box;
+        padding-top: 0.1vh;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-bottom: 0.1vh;
+        display: grid;
+        grid-template-rows: 6vh 20vh;
+    }
+    .main-content-24-card {
+        margin-top: -5.5vh;
+        margin-left: 1.7vw;
+        margin-bottom: 4vh;
+        height: 79vh;
+        width: 93vw;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 11vh 60vh;
+        padding: 20px;
+    }
+    .user-account {
+        display: grid;
+        min-width: 95vw;
+        min-height: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    /* .main-content__home{
+    overflow-y: hidden;
+  } */
+    .main-content-sidebar {
+        display: none;
+    }
+    .user-account {
+        display: grid;
+        min-width: 90vw;
+        min-height: auto;
+        margin-top: 20px;
+        margin-bottom: auto;
+    }
+    .main-home-content__hrtable {
+        overflow: scroll;
+        height: calc(0.6 * var(--main-content-card__hourly-height));
+    }
+    .main-content__home {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        min-width: auto;
+        min-height: auto;
+        max-width: 91.67vw;
+        max-height: 92.8vh;
+    }
+    .main-content__report {
+        display: grid;
+        grid-template-rows: 10vh 77.5vh;
+        min-width: auto;
+        min-height: auto;
+        max-width: 80vw;
+        max-height: 92.8vh;
+        justify-content: center;
+        margin: auto;
+    }
+    .main-content-card__chart {
+        border-width: 0.2pt;
+        width: 54.4vw;
+        height: 48.7vh;
+        margin-bottom: 2.2vh;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-rows: 12vh 36.7vh;
+    }
+    .main-content-card__hourly {
+        overflow-y: auto;
+        height: var(--main-content-card__hourly-height);
+        width: 54.4vw;
+        box-sizing: border-box;
+        padding-top: 0.1vh;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-bottom: 0.1vh;
+        display: grid;
+        grid-template-rows: 6vh 20vh;
+    }
+    .main-content-24-card {
+        height: var(--main-content-24-card-height);
+        width: 39.1vw;
+        box-sizing: border-box;
+        margin-top: 1.2vh;
+        display: grid;
+        grid-template-rows: 11vh 60vh;
+        padding: 20px;
+    }
+    .main-content-24-table {
+        overflow: auto;
+        max-height: 57vh;
+        min-height: var(--main-content-24-card-height) * 0.3!important;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main-content-body {
+        overflow-x: hidden;
+        max-height: var(--main-body-height);
+        display: grid;
+        min-height: auto;
+        max-width: 100vw;
+        grid-template-columns: 8.33vw 91.67vw;
+        grid-template-rows: 92.8vh;
+    }
+    .main-content-sidebar {
+        display: grid;
+    }
+    .main-home-content__hrtable {
+        overflow: auto;
+        height: calc(0.6 * var(--main-content-card__hourly-height));
+    }
+    .main-content__home {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        min-width: auto;
+        min-height: auto;
+        max-width: 91.67vw;
+        max-height: 92.8vh;
+    }
+    .main-content__report {
+        display: grid;
+        grid-template-rows: 10vh 77.5vh;
+        min-width: auto;
+        min-height: auto;
+        max-width: 80vw;
+        max-height: 92.8vh;
+        justify-content: center;
+        margin: auto;
+    }
+    .main-content-card__chart {
+        border-width: 0.2pt;
+        width: 48.4vw;
+        height: 48.7vh;
+        margin-bottom: 2.2vh;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-rows: 12vh 36.7vh;
+    }
+    .main-content-card__hourly {
+        height: var(--main-content-card__hourly-height);
+        width: 48.4vw;
+        box-sizing: border-box;
+        padding-top: 0.1vh;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        padding-bottom: 0.1vh;
+        display: grid;
+        grid-template-rows: 6vh 20vh;
+    }
+    .main-content-24 {
+        margin-top: 7vh;
+        margin-left: 0!important;
+        margin-right: 2.8vw;
+    }
+    .main-content-24-card {
+        height: var(--main-content-24-card-height);
+        width: 35.1vw;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: 11vh 60vh;
+    }
+}
