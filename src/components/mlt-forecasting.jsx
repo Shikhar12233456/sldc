@@ -1,6 +1,7 @@
 import React from "react";
 import {lgbrList, lgbrHeaderList, weakHeadList, weakData, monthHeadList, monthData} from "../constant/const";
 import TableComponent from "./table-component";
+
 const MltForecasting = () => (
     <div className={'px-5 py-5 w-[100vw] h-[100vh] bg-blue-100 flex flex-col justify-between'}>
         <div className={'w-full h-[46vh] flex flex-row justify-between'}>
