@@ -1,10 +1,13 @@
 import React from "react";
 import {styles} from "../constant/styles";
-import Dropdown from "./dropdown";
+import Dropdown from "./dropdownlist";
 import {accessList} from "../constant/const";
+// import Navbar from "./Navbar";
 
 const CreateUser = () => (
-    <div className={'w-full h-full bg-blue-100'}>
+    <>
+    {/* <Navbar/> */}
+    <div className={'w-full h-full bg-blue-100 mt-10'}>        
         <div className={'h-[450px] w-full items-center'}>
             <form className={'w-full h-full items-center justify-self-start flex flex-col'}>
                 <h1 className={`${styles.heading}`}>Create User</h1>
@@ -24,6 +27,7 @@ const CreateUser = () => (
             <h1>&#9899; Customer1_Operator for  Railway</h1>
         </div>
     </div>
+    </>
 );
 
 export default CreateUser;

@@ -4,7 +4,7 @@ import './Dayahead.css';
 
 const DayAhead = () => {
   return (
-      <div className={"p-10 h-[100vh] w-[100vw] flex flex-col items-center"}>
+      <div className={"pt-20 pb-10 px-10 h-[100vh] w-[100vw] flex flex-col items-center"}>
         <div className={`h-[10vh] w-[95vw] flex bg-white rounded-t-xl items-center justify-between`}>
           <h1 className={'ml-[42vw] align-middle text-xl font-semibold'}>Day Ahead Forecast</h1>
           <button className={'mr-10 h-[34px] w-[70px] bg-blue-400 text-white rounded align-bottom'}>Print As</button>

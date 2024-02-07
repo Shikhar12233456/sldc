@@ -1,6 +1,8 @@
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar"
+import Homee from "./components/Header"
 import { Route, Routes } from "react-router-dom";
 import DayAhead from "./components/DayAhead";
-import Home from "./components/home";
 import Login from "./components/Auth";
 import CreateUser from "./components/create-user";
 import UpdateUserPassword from "./components/update-user-password";
@@ -10,8 +12,11 @@ import MltForecasting from "./components/mlt-forecasting";
 function App() {
   return (
     <div className={"w-full h-full bg-blue-100"}>
-        <Routes>
-            <Route path="/" element={<Home/>} />
+      {/* <CreateUser/> */}
+      <Navbar/>  
+      {/* <Header/>       */}
+        <Routes> 
+          <Route path = {""} element = {<Homee/>}/>                       
             <Route path={"/login"} element={<Login/>}/>
             <Route path="/dayahead" element={<DayAhead />} />
             <Route path="/create-user" element={<CreateUser />} />
@@ -23,4 +28,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

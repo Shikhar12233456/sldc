@@ -2,7 +2,7 @@ import React from "react";
 import {styles} from "../constant/styles";
 
 const UpdateUserPassword = () => (
-        <div className={'w-full h-full bg-blue-100'}>
+        <div className={'w-full h-full bg-blue-100 mt-10'}>
             <div className={'h-[100vh] w-full items-center'}>
                 <form className={'w-full h-full items-center justify-self-start flex flex-col'}>
                     <h1 className={`${styles.heading}`}>Update User Password</h1>

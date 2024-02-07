@@ -1,9 +1,9 @@
 import React from "react";
 import {userList} from "../constant/const";
-import Dropdown from "./dropdown";
+import Dropdown from "./dropdownlist";
 import {styles} from "../constant/styles";
 const DeleteUser = () => (
-    <div className={'h-[100vh] w-full bg-blue-100'}>
+    <div className={'h-[100vh] w-full bg-blue-100 mt-10'}>
         <form className={'w-full h-full items-center justify-self-start flex flex-col'}>
             <h1 className={`${styles.heading}`}>Delete User</h1>
             <h1 className={`${styles.sub_heading}`}>Select Email Address</h1>
