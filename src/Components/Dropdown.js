@@ -1,17 +1,34 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import { useNavigate } from "react-router-dom";
+// import {  MenuItem } from "@progress/kendo-react-layout";
+import { Route, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Login from "../Components/Auth";
+import DayAhead from "../Components/Dayahead";
+import CreateUser from "../Components/create-user";
+import DeleteUser from "../Components/delete-user";
+import UpdateUserPassword from "../Components/update-user-password";
+import ResetPassword from "../Components/reset-password"
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
 }
 
-export default function DropdownComponent({children}) {
+export default function DropdownComponent() {
+
+    const navigate = useNavigate();
+    const onSelect = (event) => {
+      navigate(event.item.data.route);
+    };
     // const {myValue} = props;
     return (
+        <Fragment>        
+        
         <Menu as="div" className="relative inline-block text-left">
             <div>
                 <Menu.Button className="inline-flex justify-center w-full px-2 text-sm font-medium text-gray-100 rounded-md shadow-sm focus:ring-1  ">
-                    {children}
+                    Accounts
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="w-5 h-5 ml-2 -mr-1"
@@ -40,25 +57,25 @@ export default function DropdownComponent({children}) {
             >                
                 <Menu.Items className="absolute right-0 w-56 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">                    
                     <div className="py-1">
-                        <Menu.Item>
+                    {/* <li><NavLink to={`/Online`}> Online </NavLink> </li> */}
+                        {/* <Menu.Item>
                             {({ active }) => (
-                                <a
-                                    href="#"
-                                    className={classNames(
-                                        active
-                                            ? "bg-gray-100 text-gray-900"
-                                            : "text-gray-700",
-                                        "block px-4 py-2 text-sm"
-                                    )}
-                                >
+                            
+                                <NavLink to={`/update-password`} className={classNames(
+                                    active
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700",
+                                    "block px-4 py-2 text-sm"
+                                )} element={<UpdateUserPassword/>} >
                                     Change Password
-                                </a>
+                                </NavLink> 
+                                                           
                             )}
-                        </Menu.Item>
+                        </Menu.Item> */}
                         <Menu.Item>
                             {({ active }) => (
                                 <a
-                                    href="#"
+                                    href="/create-user"
                                     className={classNames(
                                         active
                                             ? "bg-gray-100 text-gray-900"
@@ -73,7 +90,7 @@ export default function DropdownComponent({children}) {
                         <Menu.Item>
                             {({ active }) => (
                                 <a
-                                    href="#"
+                                    href="/delete-user"
                                     className={classNames(
                                         active
                                             ? "bg-gray-100 text-gray-900"
@@ -88,7 +105,7 @@ export default function DropdownComponent({children}) {
                         <Menu.Item>
                             {({ active }) => (
                                 <a
-                                    href="#"
+                                    href="/update-user-password"
                                     className={classNames(
                                         active
                                             ? "bg-gray-100 text-gray-900"
@@ -103,7 +120,7 @@ export default function DropdownComponent({children}) {
                         <Menu.Item>
                             {({ active }) => (
                                 <a
-                                    href="#"
+                                    href="/create-user"
                                     className={classNames(
                                         active
                                             ? "bg-gray-100 text-gray-900"
@@ -137,5 +154,6 @@ export default function DropdownComponent({children}) {
                 {/* : */}                    
             </Transition>
         </Menu>
+        </Fragment>
     );
 }

@@ -3,7 +3,7 @@ import React from "react";
 // import Chart from "./chart";
 import Chart from "react-apexcharts";
 import { hrData, loadData } from "../Const/Const";
-const Home = () => {
+const Homee = () => {
   const state = {
     options: {
       xaxis: {
@@ -149,4 +149,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Homee;
