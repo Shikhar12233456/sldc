@@ -4,12 +4,13 @@ import './Dayahead.css';
 
 const DayAhead = () => {
   return (
-    <div className="container-table">
-      <div className="relative overflow-x-auto shadow-md border">
+      <div className={"pt-20 pb-10 px-10 h-[100vh] w-[100vw] flex flex-col items-center"}>
+        <div className={`h-[10vh] w-[95vw] flex bg-white rounded-t-xl items-center justify-between`}>
+          <h1 className={'ml-[42vw] align-middle text-xl font-semibold'}>Day Ahead Forecast</h1>
+          <button className={'mr-10 h-[34px] w-[70px] bg-blue-400 text-white rounded align-bottom'}>Print As</button>
+        </div>
+      <div className="p-5 h-[90vh] w-[95vw] bg-white overflow-scroll rounded-bl-2xl">
         <table className="w-full text-sm text-left rtl:text-right text-blue-100 dark:text-blue-100 border-b border-grey">
-          <caption className="p-5 text-lg font-semibold text-center rtl:text-right text-gray-900 bg-white dark:text-black dark:bg-white">
-            Day Ahead Load Forecast
-          </caption>
           <thead className="text-xs text-white uppercase bg-white dark:text-black">
             <tr>
               <th scope="col" className="px-6 py-3 border">
@@ -58,7 +59,7 @@ const DayAhead = () => {
           </tbody>
         </table>
       </div>
-    </div>
+      </div>
   );
 }
 

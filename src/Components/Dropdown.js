@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 // import {  MenuItem } from "@progress/kendo-react-layout";
 import { Route, Routes } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import Login from "../Components/Auth";
-import DayAhead from "../Components/Dayahead";
-import CreateUser from "../Components/create-user";
-import DeleteUser from "../Components/delete-user";
-import UpdateUserPassword from "../Components/update-user-password";
-import ResetPassword from "../Components/reset-password"
+import Login from "./Auth";
+import DayAhead from "./DayAhead";
+import CreateUser from "./create-user";
+import DeleteUser from "./delete-user";
+import UpdateUserPassword from "./update-user-password";
+import ResetPassword from "./reset-password"
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
