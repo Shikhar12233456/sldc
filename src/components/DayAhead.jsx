@@ -5,7 +5,7 @@ import './Dayahead.css';
 const DayAhead = () => {
   return (
     <div className="container-table">
-      <div className="relative overflow-x-auto shadow-md border">
+      <div className="relative overflow-x-auto shadow-md border overflow-scroll">
         <table className="w-full text-sm text-left rtl:text-right text-blue-100 dark:text-blue-100 border-b border-grey">
           <caption className="p-5 text-lg font-semibold text-center rtl:text-right text-gray-900 bg-white dark:text-black dark:bg-white">
             Day Ahead Load Forecast
